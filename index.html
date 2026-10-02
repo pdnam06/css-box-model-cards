@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <p class="eyebrow">BÀI THỰC HÀNH CSS</p>
+            <h1>Mô hình hộp CSS</h1>
+            <p class="description">
+                So sánh kích thước thực tế của phần tử khi sử dụng
+                <code>content-box</code> và <code>border-box</code>.
+            </p>
+        </header>
+
+        <section class="cards" aria-label="Các ví dụ về mô hình hộp CSS">
+            <div class="card">
+                <span class="number">01</span>
+                <h2>Content Box</h2>
+                <p>Width và height chỉ tính phần nội dung.</p>
+                <strong>Kích thước thực tế: 330 × 200px</strong>
+            </div>
+
+            <div class="card">
+                <span class="number">02</span>
+                <h2>Border Box</h2>
+                <p>Width và height đã bao gồm padding và border.</p>
+                <strong>Kích thước thực tế: 280 × 150px</strong>
+            </div>
+
+            <div class="card">
+                <span class="number">03</span>
+                <h2>Border Box</h2>
+                <p>Thẻ thứ ba dùng cùng cách tính với thẻ thứ hai.</p>
+                <strong>Kích thước thực tế: 280 × 150px</strong>
+            </div>
+        </section>
+
+        <aside class="note">
+            <h2>Kết quả so sánh</h2>
+            <p>
+                Với <code>content-box</code>, padding và border được cộng thêm vào
+                kích thước khai báo. Với <code>border-box</code>, chúng nằm bên trong
+                kích thước 280 × 150px.
+            </p>
+        </aside>
+    </main>
+</body>
+</html>
